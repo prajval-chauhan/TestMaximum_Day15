@@ -50,5 +50,27 @@ namespace TestMaximum_Day15
                 return 0;
             }
         }
+        /// <summary>
+        /// Checks the maximum string of the given three strings of same length
+        /// </summary>
+        /// <param name="firstNum">The first number.</param>
+        /// <param name="secondNum">The second number.</param>
+        /// <param name="thirdNum">The third number.</param>
+        /// <returns></returns>
+        public string CheckMaximumString (string firstNum, string secondNum, string thirdNum)
+        {
+            Console.Write("Maximum of the three number is : ");
+            if (firstNum.CompareTo(secondNum) > 0 && firstNum.CompareTo(thirdNum) > 0)
+                return firstNum;
+            else if (secondNum.CompareTo(thirdNum) > 0)
+                return secondNum;
+            else if (thirdNum.CompareTo(secondNum) > 0)
+                return thirdNum;
+            else
+            {
+                Console.WriteLine("All the integers are equal");
+                return null;
+            }
+        }
     }
 }
