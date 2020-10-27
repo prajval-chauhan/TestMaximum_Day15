@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TestMaximum_Day15
 {
-    class CheckingMaxGenerics<T> where T:IComparable
+    public class CheckingMaxGenerics<T> where T:IComparable
     {
         /// <summary>
         /// Member variable as the array would be taking multiple values
